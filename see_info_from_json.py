@@ -44,7 +44,7 @@ def read_file_and_see_it_info(path: str):
             print(f'Which position do you want to see? There are {len(data)} '
                   f'positions')
             keys = list(data.keys())
-            print(f'And keywords are next:')
+            print('And keywords are next:')
             for i, val in enumerate(keys):
                 print('{:3d} - {:s}'.format(i+1, val))
             key = input('Print num of keyword, which val you want to see: ')
@@ -74,5 +74,5 @@ def read_file_and_see_it_info(path: str):
 
 
 if __name__ == '__main__':
-    path = './examples_json/kved.json'
-    read_file_and_see_it_info(path)
+    PATH = './examples_json/kved.json'
+    read_file_and_see_it_info(PATH)
